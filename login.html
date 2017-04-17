@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	  <title>登录界面</title>
+	  <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+	  <link rel="stylesheet" href="css/main.css">
+	  <link href='http://cdn.webfont.youziku.com/webfonts/nomal/100854/45807/58e38ef0f629d8178435ae9c.css' rel='stylesheet' type='text/css' />
+	  <!--[if lt IE 9]>
+	    <script src="lib/html5shiv/html5shiv.min.js"></script>
+	    <script src="lib/respond/respond.min.js"></script>
+	  <![endif]-->
+</head>
+<body>
+	<!-- header -->
+	<header id="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-2 col-md-2 col-sm-2">
+					<div class="logo">
+						<h1><a class="icon-dark" href="#"><strong class="css9de0fa404189f6">创业邦</strong></a></h1>
+					</div>
+				</div>
+				<div class="col-lg-6 col-lg-offset-1 col-md-8 col-sm-8 ">
+					<div class="navbar-header">
+					     <!-- 汉堡菜单 -->
+					    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav_list" aria-expanded="false">
+					        <span class="sr-only">切换菜单</span>
+					        <!-- 三条杠 -->
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					    </button>
+					</div>
+					<nav class="navbar navbar-itcast" role="navigation" id="nav_list">
+						<div class="collapse navbar-collapse">
+							<ul class="nav navbar-nav">
+								<li class="active"><a href="#">首页</a></li>
+								<li><a href="#">产品介绍</a></li>
+								<li><a href="#">新闻栏目</a></li>
+								<li><a href="#">成长故事</a></li>
+								<li><a href="#">关于我们</a></li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+				<div class="col-lg-2 col-lg-offset-1 col-md-2 col-sm-2">
+					<div class="login-res">
+						<a id="login_btn" href="javascript:;">登 录</a>
+						<span>|</span>
+						<a id="register_btn" href="javascript:;">注 册</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main class="body">
+		<div class="home-view">
+			<div class='demo2'>  
+		        <div class='demo2-x'></div>
+		        <div class='demo2-y'></div>
+		        <div class='demo2-z'></div>
+		        <div class='demo2-m'></div>
+		    </div>
+		</div>
+	</main>
+	<!-- 遮罩层 -->
+	<div class="mask"></div>
+	<div class="mask2"></div>
+	<div class="mask3"></div>
+	<!-- 登录框 -->
+	<section class="login-wapper">  
+		<div class="login-box">
+			<header class="login-title">
+				<div class="rot1"></div>
+				<div class="rot2"></div>
+				<i class="icon-dark"></i>
+				<span class="css9de0fa404189f6">登录创业邦</span>
+			</header>
+			<main>
+			<form>
+				<div class="in-box">
+					<label>
+						<span>请输入用户名/手机号码</span>
+						<input type="text" name="username" id="username">
+					</label>
+				</div>
+				<div class="in-box">
+					<label>
+						<span>请输入密码</span>
+						<input type="password" name="password" id="password">
+					</label>
+				</div>
+				<div class="in-box">
+					<!-- <input type="button" name="submit" value="登 录" id="submit"> -->
+					<button type="button" id="login">登 录</button>
+				</div>
+			</form>
+			</main>
+			<footer class="oth-box">
+				<em><a href="#">忘记密码?</a></em>
+				<span>
+					还没有账号?
+					<a id="liji_register" href="javascript:;">立即注册</a>
+				</span>
+			</footer>
+		</div>
+	</section>
+	<!-- 注册框 -->
+	<section class="register-wapper">
+		<a id="close_reg" href="javascript:;">×</a>
+		<div class="register-box">
+			<header class="register-title">
+				<span class="css9de0fa404189f6">注册创业邦</span>
+			</header>
+			<main>
+				<form>
+					<div class="in-box in-long">
+						<label>
+							<input type="text" name="userphone" id="user_phone" placeholder="请输入手机号码">
+						</label>
+						<!-- <div class="input-tip">√</div> -->
+					</div>
+					<div class="in-box in-short">
+						<label>
+							<input type="text" name="imgverify" id="inputCode" placeholder="请输入图片验证码">
+						</label>
+						<div class="img-verify">
+							<span id="code" class="mycode"></span>
+						</div>
+					</div>
+					<div class="in-box in-short">
+						<label>
+							<input type="text" name="phoneverify" id="phone_verify" placeholder="请输入手机验证">
+						</label>
+						<span class="phone-verify">获取验证码</span>
+					</div>
+					<div class="in-box in-long">
+						<label>
+							<input type="password" name="regpassword" id="reg_password" placeholder="请输入密码">
+						</label>
+					</div>
+					<div class="password-strength">
+						<div class="pw-weak">
+							<div></div>
+							<span>弱</span>
+						</div>
+						<div class="pw-medium">
+							<span>中</span>
+						</div>
+						<div class="pw-strong">
+							<span>强</span>
+						</div>
+						<div class="cover"></div>
+					</div>
+					<div class="in-box in-long">
+						<input type="button" value="注 册"  id="register">
+					</div>
+				</form>
+			</main>
+			<footer class="footer">
+				<div>
+					已有账号?
+					<a id="liji_login" href="javascript:;">马上登录</a>
+				</div>
+			</footer>
+		</div>
+	</section>
+	<!-- 注册时错误信息提示 -->
+	<div class="reg-tip-box" id="form_tip">
+		<a id="close_regtip" href="javascript:;">×</a>
+		<div class="reg-tip">
+			<strong></strong>
+			<span></span>
+		</div>
+	</div>
+	
+	<!-- /header -->
+	<script src="lib/jquery/jquery.js"></script>
+  	<script src="lib/bootstrap/js/bootstrap.js"></script>
+  	<script src="lib/js.KinerCode.js"></script>
+  	<script src="js/main.js"></script>
+</body>
+</html>
